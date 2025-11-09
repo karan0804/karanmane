@@ -1,0 +1,197 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.8,top=0.5cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% personal data
+
+\name{KARAN DATTATRAY}{MANE}                               % optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{3mm}
+\phone[mobile]{+91-8530931694}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{karan0804d@gmail.com}                               % optional, remove / comment the line if not wanted
+ \homepage{linkedin.com/in/karanmane0804d}                         % optional, remove / comment the line if not wanted
+ \social[github]{karan0804}   
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Education}
+\cventry{}{}{Savitribai Phule Pune University }{2024 – 2027}{\hspace*{-2.5 mm} Bachelor of Engineering in Computer Science}{Pursuing From Dr. D. Y. Patil Technical Campus, Pune}
+
+
+%{}{Related Coursework:}
+%\vspace{-1.0em}\begin{small}
+% \begin{multicols}{3}
+%    \begin{itemize}
+%\item Comp Sci Fundamentals I
+%\item Comp Sci Fundamentals II
+%\item Calculus I
+%\item Calculus II
+%\item Linear Algebra I
+
+
+ %   \end{itemize}
+ %   \end{multicols}\end{small}
+    
+\cventry{}{}{Maharashtra State Board of Technical Education (MSBTE)}{2021 – 2024}{\hspace*{-2.5 mm}  Diploma in Computer Engineering}{Completed From Navsahyadri Group of Institutes, Pune}
+
+
+%{}{Courses:}
+%\vspace*{5.5 mm}
+%\vspace{-1.0em}\begin{small}
+%    \begin{itemize}
+%\item ICS3U (Introduction to Computer %Science -Grade 11) - 96\%
+%\item ICS4U (Computer Science -Grade 12) - 93\% 
+%\item MCV4U (Calculus and Vectors -Grade 12) - 95\%
+%\item MHF4U (Advanced Functions -Grade 12) - 98\%
+
+%    \end{itemize}
+%    \end{small}
+    
+    
+
+
+\section{Projects}
+
+\cventry{}{}{Gesture Detection System}{ \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Android app implemented in \textbf{Java}. 
+\item Built a gesture recognition app capable of interpreting hand signals. 
+\item Added text to speach options.
+\end{itemize}}
+% \vspace{1.0em}
+
+\cventry{}{}{Food Donation Application}{\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Developed using \textbf{Python, OpenCV},.  
+\item Developed a platform to manage food donations with image-based classification features.
+\item Learned to design and write scripts in AndriodStudio and VisualStudioCode.
+%\item Grade received: 93\%
+\end{itemize}}
+
+\cventry{}{}{Hostel Management Website}{\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Web-site develope using \textbf{Python, HTML, CSS ,XAMPP},.  
+\item Developed a platform to manage hostel rooms and know about available vacancies in hostel.
+\item Also to know over-dues, cleaning, maintenance, antecedence of students.  
+%\item Grade received: 93\%
+\end{itemize}}
+
+
+
+\section{Internship Experience}
+
+\cventry{}{}{Intern – Proazure Pvt. Ltd., Pune}{Jul 2023 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Gained hands-on experience in real-time application development and team collaboration.
+\end{itemize}}
+
+\cventry{}{}{Intern – Anudip Pvt. Ltd., Pune}{Dec 2024\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Participated in skill development programs (MYSQL, Java, MongoDB) .
+\end{itemize}}
+% \vspace{-1.0em}
+
+
+
+%\cventry{}{}{University of Toronto Admission Scholarship}{June 2019 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+%\begin{itemize}
+%\item Awarded for enrolling with an average of 95\% and above.
+%\end{itemize}}
+% \vspace{1.}
+
+
+
+
+
+\section{Technical Skils}
+\cventry{}{}{Languages}{ \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Python, Java, C, C++, HTML/CSS, Javascript, SQL
+%\item Competed in national competition and finished in third place. 
+\end{itemize}}
+%\vspace{0.5em}
+
+
+\cventry{}{}{Developer Tools}{ \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item VisualStudio Code, Andriod Studio, JupiterNoteBook, Eclips, PowerBI, MYSQL, MongoDB, MS Word, MS Excel
+%\item Meet with students multiple times weekly to explain concepts and answer questions.
+\end{itemize}}
+
+% \vspace{1.0em}
+\section{Contact Links}
+
+\cventry{}{}{LinkedIn:}{\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item www.linkedin.com/in/karanmane0804d
+\end{itemize}}
+
+\cventry{}{}{Portfolio}{\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item https://karan0804.github.io/karanmane.github.io/#skills
+\end{itemize}}
+% \vspace{-1.0em}
+
+
+
+  
+  
+\end{document}
